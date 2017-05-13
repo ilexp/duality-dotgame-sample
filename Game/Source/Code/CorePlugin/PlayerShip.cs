@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Duality;
+using Duality.Editor;
 using Duality.Input;
 using Duality.Components;
 using Duality.Components.Physics;
@@ -12,6 +13,22 @@ namespace Game
 	[RequiredComponent(typeof(RigidBody))]
 	public class PlayerShip : Component, ICmpUpdatable
 	{
+		private float turnSpeed = 0.1f;
+		private float moveAcceleration = 0.2f;
+
+		[EditorHintRange(0.0f, 1.0f)]
+		public float TurnSpeed
+		{
+			get { return this.turnSpeed; }
+			set { this.turnSpeed = value; }
+		}
+		[EditorHintRange(0.0f, 1.0f)]
+		public float MoveAcceleration
+		{
+			get { return this.moveAcceleration; }
+			set { this.moveAcceleration = value; }
+		}
+
 		void ICmpUpdatable.OnUpdate()
 		{
 			RigidBody body = this.GameObj.GetComponent<RigidBody>();
@@ -24,7 +41,7 @@ namespace Game
 				targetRotation = 1.0f;
 
 			// Override velocity for rotation
-			body.AngularVelocity = targetRotation * 0.1f;
+			body.AngularVelocity = targetRotation * this.turnSpeed;
 
 			// Determine the desired movement vector from user input
 			Vector2 targetMovement = Vector2.Zero;
@@ -34,7 +51,7 @@ namespace Game
 				targetMovement = new Vector2(0.0f, 1.0f);
 
 			// Apply a force for movement
-			body.ApplyLocalForce(targetMovement * 0.2f * body.Mass);
+			body.ApplyLocalForce(targetMovement * this.moveAcceleration * body.Mass);
 		}
 	}
 }
