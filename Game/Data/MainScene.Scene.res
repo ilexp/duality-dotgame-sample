@@ -386,7 +386,7 @@
       <active dataType="Bool">true</active>
       <children />
       <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="3795861522">
-        <_items dataType="Array" type="Duality.Component[]" id="4114558544" length="4">
+        <_items dataType="Array" type="Duality.Component[]" id="4114558544">
           <item dataType="Struct" type="Duality.Components.Transform" id="2386608304">
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">26293372</gameobj>
@@ -399,8 +399,12 @@
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">26293372</gameobj>
           </item>
+          <item dataType="Struct" type="Game.Asteroid" id="3716721853">
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">26293372</gameobj>
+          </item>
         </_items>
-        <_size dataType="Int">3</_size>
+        <_size dataType="Int">4</_size>
       </compList>
       <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="167061450" surrogate="true">
         <header />
@@ -409,11 +413,13 @@
             <item dataType="ObjectRef">585385934</item>
             <item dataType="ObjectRef">1190518884</item>
             <item dataType="ObjectRef">3536303126</item>
+            <item dataType="Type" id="633893996" value="Game.Asteroid" />
           </keys>
           <values dataType="Array" type="System.Object[]" id="1788887262">
             <item dataType="ObjectRef">2386608304</item>
             <item dataType="ObjectRef">1668459940</item>
             <item dataType="ObjectRef">3089069896</item>
+            <item dataType="ObjectRef">3716721853</item>
           </values>
         </body>
       </compMap>
@@ -425,13 +431,30 @@
         <body />
       </identifier>
       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-      <name dataType="String">Asteroid</name>
+      <name dataType="String">AsteroidBig</name>
       <parent />
       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4222350370">
-        <changes />
+        <changes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Resources.PrefabLink+VarMod]]" id="3324079776">
+          <_items dataType="Array" type="Duality.Resources.PrefabLink+VarMod[]" id="4027882716" length="4">
+            <item dataType="Struct" type="Duality.Resources.PrefabLink+VarMod">
+              <childIndex dataType="Struct" type="System.Collections.Generic.List`1[[System.Int32]]" id="4146644424">
+                <_items dataType="Array" type="System.Int32[]" id="719521388"></_items>
+                <_size dataType="Int">0</_size>
+              </childIndex>
+              <componentType dataType="ObjectRef">585385934</componentType>
+              <prop dataType="MemberInfo" id="2369978078" value="P:Duality.Components.Transform:RelativePos" />
+              <val dataType="Struct" type="Duality.Vector3">
+                <X dataType="Float">-115.5</X>
+                <Y dataType="Float">-132</Y>
+                <Z dataType="Float">0</Z>
+              </val>
+            </item>
+          </_items>
+          <_size dataType="Int">1</_size>
+        </changes>
         <obj dataType="ObjectRef">26293372</obj>
         <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
-          <contentPath dataType="String">Data\Prefabs\Asteroid.Prefab.res</contentPath>
+          <contentPath dataType="String">Data\Prefabs\AsteroidBig.Prefab.res</contentPath>
         </prefab>
       </prefabLink>
     </item>
@@ -439,7 +462,7 @@
       <active dataType="Bool">true</active>
       <children />
       <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="2192652452">
-        <_items dataType="Array" type="Duality.Component[]" id="1466474692" length="4">
+        <_items dataType="Array" type="Duality.Component[]" id="1466474692">
           <item dataType="Struct" type="Duality.Components.Transform" id="3371610734">
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">1011295802</gameobj>
@@ -452,8 +475,12 @@
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">1011295802</gameobj>
           </item>
+          <item dataType="Struct" type="Game.Asteroid" id="406756987">
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">1011295802</gameobj>
+          </item>
         </_items>
-        <_size dataType="Int">3</_size>
+        <_size dataType="Int">4</_size>
       </compList>
       <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="1170606870" surrogate="true">
         <header />
@@ -462,11 +489,13 @@
             <item dataType="ObjectRef">585385934</item>
             <item dataType="ObjectRef">1190518884</item>
             <item dataType="ObjectRef">3536303126</item>
+            <item dataType="ObjectRef">633893996</item>
           </keys>
           <values dataType="Array" type="System.Object[]" id="4118646218">
             <item dataType="ObjectRef">3371610734</item>
             <item dataType="ObjectRef">2653462370</item>
             <item dataType="ObjectRef">4074072326</item>
+            <item dataType="ObjectRef">406756987</item>
           </values>
         </body>
       </compMap>
@@ -478,7 +507,7 @@
         <body />
       </identifier>
       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-      <name dataType="String">Asteroid</name>
+      <name dataType="String">AsteroidBig</name>
       <parent />
       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3734628256">
         <changes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Resources.PrefabLink+VarMod]]" id="4062345480">
@@ -489,7 +518,7 @@
                 <_size dataType="Int">0</_size>
               </childIndex>
               <componentType dataType="ObjectRef">585385934</componentType>
-              <prop dataType="MemberInfo" id="103372702" value="P:Duality.Components.Transform:RelativePos" />
+              <prop dataType="ObjectRef">2369978078</prop>
               <val dataType="Struct" type="Duality.Vector3">
                 <X dataType="Float">285</X>
                 <Y dataType="Float">78</Y>
@@ -501,7 +530,7 @@
         </changes>
         <obj dataType="ObjectRef">1011295802</obj>
         <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
-          <contentPath dataType="String">Data\Prefabs\Asteroid.Prefab.res</contentPath>
+          <contentPath dataType="String">Data\Prefabs\AsteroidBig.Prefab.res</contentPath>
         </prefab>
       </prefabLink>
     </item>
@@ -509,7 +538,7 @@
       <active dataType="Bool">true</active>
       <children />
       <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="3898948940">
-        <_items dataType="Array" type="Duality.Component[]" id="1110262180" length="4">
+        <_items dataType="Array" type="Duality.Component[]" id="1110262180">
           <item dataType="Struct" type="Duality.Components.Transform" id="2247426038">
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">4182078402</gameobj>
@@ -522,8 +551,12 @@
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">4182078402</gameobj>
           </item>
+          <item dataType="Struct" type="Game.Asteroid" id="3577539587">
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">4182078402</gameobj>
+          </item>
         </_items>
-        <_size dataType="Int">3</_size>
+        <_size dataType="Int">4</_size>
       </compList>
       <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="226305014" surrogate="true">
         <header />
@@ -532,11 +565,13 @@
             <item dataType="ObjectRef">585385934</item>
             <item dataType="ObjectRef">1190518884</item>
             <item dataType="ObjectRef">3536303126</item>
+            <item dataType="ObjectRef">633893996</item>
           </keys>
           <values dataType="Array" type="System.Object[]" id="3225558714">
             <item dataType="ObjectRef">2247426038</item>
             <item dataType="ObjectRef">1529277674</item>
             <item dataType="ObjectRef">2949887630</item>
+            <item dataType="ObjectRef">3577539587</item>
           </values>
         </body>
       </compMap>
@@ -548,7 +583,7 @@
         <body />
       </identifier>
       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-      <name dataType="String">Asteroid</name>
+      <name dataType="String">AsteroidBig</name>
       <parent />
       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1015753304">
         <changes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Resources.PrefabLink+VarMod]]" id="1513072504">
@@ -559,7 +594,7 @@
                 <_size dataType="Int">0</_size>
               </childIndex>
               <componentType dataType="ObjectRef">585385934</componentType>
-              <prop dataType="ObjectRef">103372702</prop>
+              <prop dataType="ObjectRef">2369978078</prop>
               <val dataType="Struct" type="Duality.Vector3">
                 <X dataType="Float">290</X>
                 <Y dataType="Float">-259</Y>
@@ -571,7 +606,7 @@
         </changes>
         <obj dataType="ObjectRef">4182078402</obj>
         <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
-          <contentPath dataType="String">Data\Prefabs\Asteroid.Prefab.res</contentPath>
+          <contentPath dataType="String">Data\Prefabs\AsteroidBig.Prefab.res</contentPath>
         </prefab>
       </prefabLink>
     </item>
