@@ -29,7 +29,7 @@
         <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="2349832759">
           <active dataType="Bool">true</active>
           <allowParent dataType="Bool">false</allowParent>
-          <angularDamp dataType="Float">0.3</angularDamp>
+          <angularDamp dataType="Float">0</angularDamp>
           <angularVel dataType="Float">0</angularVel>
           <bodyType dataType="Enum" type="Duality.Components.Physics.BodyType" name="Dynamic" value="1" />
           <colCat dataType="Enum" type="Duality.Components.Physics.CollisionCategory" name="Cat1" value="1" />
@@ -42,7 +42,7 @@
           <gameobj dataType="ObjectRef">3582023531</gameobj>
           <ignoreGravity dataType="Bool">false</ignoreGravity>
           <joints />
-          <linearDamp dataType="Float">0.3</linearDamp>
+          <linearDamp dataType="Float">0</linearDamp>
           <linearVel dataType="Struct" type="Duality.Vector2" />
           <revolutions dataType="Float">0</revolutions>
           <shapes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Components.Physics.ShapeInfo]]" id="4220325131">
@@ -57,7 +57,7 @@
                 </position>
                 <radius dataType="Float">10.000001</radius>
                 <restitution dataType="Float">0.3</restitution>
-                <sensor dataType="Bool">false</sensor>
+                <sensor dataType="Bool">true</sensor>
                 <userTag dataType="Int">0</userTag>
               </item>
             </_items>
