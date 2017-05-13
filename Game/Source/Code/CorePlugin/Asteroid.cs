@@ -18,6 +18,8 @@ namespace Game
 	{
 		private float health = 100.0f;
 		private List<ContentRef<Prefab>> breaksUpInto = new List<ContentRef<Prefab>>();
+		private ContentRef<Sound> breakSound = null;
+
 
 		public float Health
 		{
@@ -29,6 +31,12 @@ namespace Game
 			get { return this.breaksUpInto; }
 			set { this.breaksUpInto = value ?? new List<ContentRef<Prefab>>(); }
 		}
+		public ContentRef<Sound> BreaksSound
+		{
+			get { return this.breakSound; }
+			set { this.breakSound = value; }
+		}
+
 
 		public void DoDamage(float damage)
 		{
@@ -58,7 +66,8 @@ namespace Game
 					this.GameObj.ParentScene.AddObject(obj);
 				}
 			}
-
+			
+			DualityApp.Sound.PlaySound(this.breakSound);
 			this.GameObj.DisposeLater();
 		}
 	}

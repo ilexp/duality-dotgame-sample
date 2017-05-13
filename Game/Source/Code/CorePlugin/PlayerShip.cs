@@ -17,6 +17,7 @@ namespace Game
 		private float turnSpeed = 0.1f;
 		private float moveAcceleration = 0.2f;
 		private ContentRef<Prefab> laserPrefab = null;
+		private ContentRef<Sound> laserSound = null;
 		private List<Transform> laserSlots = new List<Transform>();
 
 
@@ -36,6 +37,11 @@ namespace Game
 		{
 			get { return this.laserPrefab; }
 			set { this.laserPrefab = value; }
+		}
+		public ContentRef<Sound> LaserSound
+		{
+			get { return this.laserSound; }
+			set { this.laserSound = value; }
 		}
 		public List<Transform> LaserSlots
 		{
@@ -63,6 +69,9 @@ namespace Game
 				// Add the object to the scene we're simulating
 				this.GameObj.ParentScene.AddObject(obj);
 			}
+
+			// Play a laser sound
+			DualityApp.Sound.PlaySound(this.laserSound);
 		}
 
 		void ICmpUpdatable.OnUpdate()

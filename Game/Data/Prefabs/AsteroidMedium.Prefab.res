@@ -37,7 +37,7 @@
         <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="1222730112">
           <active dataType="Bool">true</active>
           <allowParent dataType="Bool">false</allowParent>
-          <angularDamp dataType="Float">0.3</angularDamp>
+          <angularDamp dataType="Float">0.2</angularDamp>
           <angularVel dataType="Float">0</angularVel>
           <bodyType dataType="Enum" type="Duality.Components.Physics.BodyType" name="Dynamic" value="1" />
           <colCat dataType="Enum" type="Duality.Components.Physics.CollisionCategory" name="Cat1" value="1" />
@@ -50,7 +50,7 @@
           <gameobj dataType="ObjectRef">2454920884</gameobj>
           <ignoreGravity dataType="Bool">false</ignoreGravity>
           <joints />
-          <linearDamp dataType="Float">0.3</linearDamp>
+          <linearDamp dataType="Float">0.05</linearDamp>
           <linearVel dataType="Struct" type="Duality.Vector2" />
           <revolutions dataType="Float">0</revolutions>
           <shapes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Components.Physics.ShapeInfo]]" id="3446395676">
@@ -151,6 +151,9 @@
         </item>
         <item dataType="Struct" type="Game.Asteroid" id="1850382069">
           <active dataType="Bool">true</active>
+          <breakSound dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Sound]]">
+            <contentPath dataType="String">Data\Audio\AsteroidBreak.Sound.res</contentPath>
+          </breakSound>
           <breaksUpInto dataType="Struct" type="System.Collections.Generic.List`1[[Duality.ContentRef`1[[Duality.Resources.Prefab]]]]" id="3530445477">
             <_items dataType="Array" type="Duality.ContentRef`1[[Duality.Resources.Prefab]][]" id="2724281750" length="4">
               <item dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
