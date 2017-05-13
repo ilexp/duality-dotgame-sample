@@ -351,7 +351,7 @@
       <active dataType="Bool">true</active>
       <children />
       <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="2011898610">
-        <_items dataType="Array" type="Duality.Component[]" id="3468463568" length="4">
+        <_items dataType="Array" type="Duality.Component[]" id="3468463568">
           <item dataType="Struct" type="Duality.Components.Transform" id="717891536">
             <active dataType="Bool">true</active>
             <angle dataType="Float">0</angle>
@@ -395,16 +395,16 @@
                     <_items dataType="Array" type="Duality.Vector2[][]" id="121113924" length="4">
                       <item dataType="Array" type="Duality.Vector2[]" id="3037188676">
                         <item dataType="Struct" type="Duality.Vector2">
-                          <X dataType="Float">-47</X>
-                          <Y dataType="Float">25</Y>
+                          <X dataType="Float">-47.0000076</X>
+                          <Y dataType="Float">19.9999981</Y>
                         </item>
                         <item dataType="Struct" type="Duality.Vector2">
-                          <X dataType="Float">0</X>
-                          <Y dataType="Float">-35</Y>
+                          <X dataType="Float">1.335144E-05</X>
+                          <Y dataType="Float">-40.0000038</Y>
                         </item>
                         <item dataType="Struct" type="Duality.Vector2">
-                          <X dataType="Float">47</X>
-                          <Y dataType="Float">25</Y>
+                          <X dataType="Float">46.9999924</X>
+                          <Y dataType="Float">19.9999981</Y>
                         </item>
                       </item>
                     </_items>
@@ -418,16 +418,16 @@
                   <userTag dataType="Int">0</userTag>
                   <vertices dataType="Array" type="Duality.Vector2[]" id="1818064278">
                     <item dataType="Struct" type="Duality.Vector2">
-                      <X dataType="Float">-47</X>
-                      <Y dataType="Float">25</Y>
+                      <X dataType="Float">-47.0000076</X>
+                      <Y dataType="Float">20</Y>
                     </item>
                     <item dataType="Struct" type="Duality.Vector2">
-                      <X dataType="Float">0</X>
-                      <Y dataType="Float">-35</Y>
+                      <X dataType="Float">1.335144E-05</X>
+                      <Y dataType="Float">-40.0000038</Y>
                     </item>
                     <item dataType="Struct" type="Duality.Vector2">
-                      <X dataType="Float">47</X>
-                      <Y dataType="Float">25</Y>
+                      <X dataType="Float">46.9999924</X>
+                      <Y dataType="Float">20</Y>
                     </item>
                   </vertices>
                 </item>
@@ -452,7 +452,7 @@
               <H dataType="Float">75</H>
               <W dataType="Float">98</W>
               <X dataType="Float">-49</X>
-              <Y dataType="Float">-37.5</Y>
+              <Y dataType="Float">-42.5</Y>
             </rect>
             <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
             <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
@@ -460,8 +460,12 @@
             </sharedMat>
             <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group0" value="1" />
           </item>
+          <item dataType="Struct" type="Game.PlayerShip" id="1189923947">
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">2652543900</gameobj>
+          </item>
         </_items>
-        <_size dataType="Int">3</_size>
+        <_size dataType="Int">4</_size>
       </compList>
       <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="3140383050" surrogate="true">
         <header />
@@ -470,11 +474,13 @@
             <item dataType="ObjectRef">3279920512</item>
             <item dataType="ObjectRef">633893996</item>
             <item dataType="Type" id="273693228" value="Duality.Components.Physics.RigidBody" />
+            <item dataType="Type" id="2654206902" value="Game.PlayerShip" />
           </keys>
           <values dataType="Array" type="System.Object[]" id="3110962462">
             <item dataType="ObjectRef">717891536</item>
             <item dataType="ObjectRef">4294710468</item>
             <item dataType="ObjectRef">1420353128</item>
+            <item dataType="ObjectRef">1189923947</item>
           </values>
         </body>
       </compMap>
