@@ -396,15 +396,15 @@
                       <item dataType="Array" type="Duality.Vector2[]" id="3037188676">
                         <item dataType="Struct" type="Duality.Vector2">
                           <X dataType="Float">-47.0000076</X>
-                          <Y dataType="Float">19.9999981</Y>
+                          <Y dataType="Float">25</Y>
                         </item>
                         <item dataType="Struct" type="Duality.Vector2">
                           <X dataType="Float">1.335144E-05</X>
-                          <Y dataType="Float">-40.0000038</Y>
+                          <Y dataType="Float">-35.0000038</Y>
                         </item>
                         <item dataType="Struct" type="Duality.Vector2">
                           <X dataType="Float">46.9999924</X>
-                          <Y dataType="Float">19.9999981</Y>
+                          <Y dataType="Float">25</Y>
                         </item>
                       </item>
                     </_items>
@@ -419,15 +419,15 @@
                   <vertices dataType="Array" type="Duality.Vector2[]" id="1818064278">
                     <item dataType="Struct" type="Duality.Vector2">
                       <X dataType="Float">-47.0000076</X>
-                      <Y dataType="Float">20</Y>
+                      <Y dataType="Float">25.0000019</Y>
                     </item>
                     <item dataType="Struct" type="Duality.Vector2">
                       <X dataType="Float">1.335144E-05</X>
-                      <Y dataType="Float">-40.0000038</Y>
+                      <Y dataType="Float">-35.0000038</Y>
                     </item>
                     <item dataType="Struct" type="Duality.Vector2">
                       <X dataType="Float">46.9999924</X>
-                      <Y dataType="Float">20</Y>
+                      <Y dataType="Float">25.0000019</Y>
                     </item>
                   </vertices>
                 </item>
@@ -452,7 +452,7 @@
               <H dataType="Float">75</H>
               <W dataType="Float">98</W>
               <X dataType="Float">-49</X>
-              <Y dataType="Float">-42.5</Y>
+              <Y dataType="Float">-37.5</Y>
             </rect>
             <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
             <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
