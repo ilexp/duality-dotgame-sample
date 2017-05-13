@@ -741,7 +741,7 @@
                         <density dataType="Float">1</density>
                         <friction dataType="Float">0.3</friction>
                         <parent dataType="ObjectRef">3921328068</parent>
-                        <restitution dataType="Float">0.3</restitution>
+                        <restitution dataType="Float">0.8</restitution>
                         <sensor dataType="Bool">false</sensor>
                         <userTag dataType="Int">0</userTag>
                         <vertices dataType="Array" type="Duality.Vector2[]" id="2986101398">
@@ -898,7 +898,7 @@
                         <density dataType="Float">1</density>
                         <friction dataType="Float">0.3</friction>
                         <parent dataType="ObjectRef">3093860107</parent>
-                        <restitution dataType="Float">0.3</restitution>
+                        <restitution dataType="Float">0.8</restitution>
                         <sensor dataType="Bool">false</sensor>
                         <userTag dataType="Int">0</userTag>
                         <vertices dataType="Array" type="Duality.Vector2[]" id="1411701014">
@@ -1055,7 +1055,7 @@
                         <density dataType="Float">1</density>
                         <friction dataType="Float">0.3</friction>
                         <parent dataType="ObjectRef">1219870472</parent>
-                        <restitution dataType="Float">0.3</restitution>
+                        <restitution dataType="Float">0.8</restitution>
                         <sensor dataType="Bool">false</sensor>
                         <userTag dataType="Int">0</userTag>
                         <vertices dataType="Array" type="Duality.Vector2[]" id="4211650198">
@@ -1212,7 +1212,7 @@
                         <density dataType="Float">1</density>
                         <friction dataType="Float">0.3</friction>
                         <parent dataType="ObjectRef">2742454353</parent>
-                        <restitution dataType="Float">0.3</restitution>
+                        <restitution dataType="Float">0.8</restitution>
                         <sensor dataType="Bool">false</sensor>
                         <userTag dataType="Int">0</userTag>
                         <vertices dataType="Array" type="Duality.Vector2[]" id="4197641878">
@@ -1369,7 +1369,7 @@
                         <density dataType="Float">1</density>
                         <friction dataType="Float">0.3</friction>
                         <parent dataType="ObjectRef">2325850905</parent>
-                        <restitution dataType="Float">0.3</restitution>
+                        <restitution dataType="Float">0.8</restitution>
                         <sensor dataType="Bool">false</sensor>
                         <userTag dataType="Int">0</userTag>
                         <vertices dataType="Array" type="Duality.Vector2[]" id="418448022">
@@ -1526,7 +1526,7 @@
                         <density dataType="Float">1</density>
                         <friction dataType="Float">0.3</friction>
                         <parent dataType="ObjectRef">3464345744</parent>
-                        <restitution dataType="Float">0.3</restitution>
+                        <restitution dataType="Float">0.8</restitution>
                         <sensor dataType="Bool">false</sensor>
                         <userTag dataType="Int">0</userTag>
                         <vertices dataType="Array" type="Duality.Vector2[]" id="1373394326">
@@ -1683,7 +1683,7 @@
                         <density dataType="Float">1</density>
                         <friction dataType="Float">0.3</friction>
                         <parent dataType="ObjectRef">1445184107</parent>
-                        <restitution dataType="Float">0.3</restitution>
+                        <restitution dataType="Float">0.8</restitution>
                         <sensor dataType="Bool">false</sensor>
                         <userTag dataType="Int">0</userTag>
                         <vertices dataType="Array" type="Duality.Vector2[]" id="897100054">
@@ -1840,7 +1840,7 @@
                         <density dataType="Float">1</density>
                         <friction dataType="Float">0.3</friction>
                         <parent dataType="ObjectRef">192298724</parent>
-                        <restitution dataType="Float">0.3</restitution>
+                        <restitution dataType="Float">0.8</restitution>
                         <sensor dataType="Bool">false</sensor>
                         <userTag dataType="Int">0</userTag>
                         <vertices dataType="Array" type="Duality.Vector2[]" id="2374761110">
@@ -1997,7 +1997,7 @@
                         <density dataType="Float">1</density>
                         <friction dataType="Float">0.3</friction>
                         <parent dataType="ObjectRef">1823371078</parent>
-                        <restitution dataType="Float">0.3</restitution>
+                        <restitution dataType="Float">0.8</restitution>
                         <sensor dataType="Bool">false</sensor>
                         <userTag dataType="Int">0</userTag>
                         <vertices dataType="Array" type="Duality.Vector2[]" id="3045706134">
@@ -2154,7 +2154,7 @@
                         <density dataType="Float">1</density>
                         <friction dataType="Float">0.3</friction>
                         <parent dataType="ObjectRef">454861189</parent>
-                        <restitution dataType="Float">0.3</restitution>
+                        <restitution dataType="Float">0.8</restitution>
                         <sensor dataType="Bool">false</sensor>
                         <userTag dataType="Int">0</userTag>
                         <vertices dataType="Array" type="Duality.Vector2[]" id="683448598">
@@ -2311,7 +2311,7 @@
                         <density dataType="Float">1</density>
                         <friction dataType="Float">0.3</friction>
                         <parent dataType="ObjectRef">4059691807</parent>
-                        <restitution dataType="Float">0.3</restitution>
+                        <restitution dataType="Float">0.8</restitution>
                         <sensor dataType="Bool">false</sensor>
                         <userTag dataType="Int">0</userTag>
                         <vertices dataType="Array" type="Duality.Vector2[]" id="4283738774">
@@ -2468,7 +2468,7 @@
                         <density dataType="Float">1</density>
                         <friction dataType="Float">0.3</friction>
                         <parent dataType="ObjectRef">3965473314</parent>
-                        <restitution dataType="Float">0.3</restitution>
+                        <restitution dataType="Float">0.8</restitution>
                         <sensor dataType="Bool">false</sensor>
                         <userTag dataType="Int">0</userTag>
                         <vertices dataType="Array" type="Duality.Vector2[]" id="821249430">
@@ -2573,6 +2573,8 @@
       <parent />
       <prefabLink />
     </item>
+    <item dataType="ObjectRef">4170627875</item>
+    <item dataType="ObjectRef">472865145</item>
     <item dataType="ObjectRef">858551544</item>
     <item dataType="ObjectRef">31083583</item>
     <item dataType="ObjectRef">2452061244</item>
@@ -2585,8 +2587,6 @@
     <item dataType="ObjectRef">1687051961</item>
     <item dataType="ObjectRef">996915283</item>
     <item dataType="ObjectRef">902696790</item>
-    <item dataType="ObjectRef">4170627875</item>
-    <item dataType="ObjectRef">472865145</item>
   </serializeObj>
   <visibilityStrategy dataType="Struct" type="Duality.Components.DefaultRendererVisibilityStrategy" id="2035693768" />
 </root>
