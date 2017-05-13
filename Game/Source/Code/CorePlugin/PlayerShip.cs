@@ -5,6 +5,7 @@ using System.Linq;
 using Duality;
 using Duality.Editor;
 using Duality.Input;
+using Duality.Resources;
 using Duality.Components;
 using Duality.Components.Physics;
 
@@ -15,6 +16,9 @@ namespace Game
 	{
 		private float turnSpeed = 0.1f;
 		private float moveAcceleration = 0.2f;
+		private ContentRef<Prefab> laserPrefab = null;
+		private List<Transform> laserSlots = new List<Transform>();
+
 
 		[EditorHintRange(0.0f, 1.0f)]
 		public float TurnSpeed
@@ -27,6 +31,38 @@ namespace Game
 		{
 			get { return this.moveAcceleration; }
 			set { this.moveAcceleration = value; }
+		}
+		public ContentRef<Prefab> LaserPrefab
+		{
+			get { return this.laserPrefab; }
+			set { this.laserPrefab = value; }
+		}
+		public List<Transform> LaserSlots
+		{
+			get { return this.laserSlots; }
+			set { this.laserSlots = value ?? new List<Transform>(); }
+		}
+
+
+		private void FireWeapon()
+		{
+			// Create one laser bullet for every slot on the ship
+			foreach (Transform slot in this.laserSlots)
+			{
+				// Instantiate the laser prefab
+				GameObject obj = this.laserPrefab.Res.Instantiate();
+
+				// Adjust its position to match the slot
+				obj.Transform.Pos = slot.Pos;
+				obj.Transform.Angle = slot.Angle;
+
+				// Set its velocity forward at a constant speed, relative to the ship velocity
+				RigidBody body = obj.GetComponent<RigidBody>();
+				body.LinearVelocity = slot.Forward.Xy * 10.0f + this.GameObj.Transform.Vel.Xy;
+
+				// Add the object to the scene we're simulating
+				this.GameObj.ParentScene.AddObject(obj);
+			}
 		}
 
 		void ICmpUpdatable.OnUpdate()
@@ -52,6 +88,10 @@ namespace Game
 
 			// Apply a force for movement
 			body.ApplyLocalForce(targetMovement * this.moveAcceleration * body.Mass);
+
+			// Fire lasers when space bar is hit
+			if (DualityApp.Keyboard.KeyHit(Key.Space))
+				this.FireWeapon();
 		}
 	}
 }
